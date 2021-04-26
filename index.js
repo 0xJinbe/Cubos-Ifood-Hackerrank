@@ -12,3 +12,9 @@ for (let item of lista) {
 console.log(resultado)
 
 // funções
+
+function imprimirOLAnatela() {
+  console.log('OLÁ!')
+}
+
+imprimirOLAnatela() // call function
