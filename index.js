@@ -85,3 +85,7 @@ if (!crianca.temPassaporte) {
   console.log(`${crianca.nome} ESTA BARRADA`)
 }
 
+// arrays ou vetores
+
+const listaDeCompras = ['arroz', 'batata', 'maça'];
+console.log(listaDeCompras[0])
