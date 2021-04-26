@@ -87,5 +87,18 @@ if (!crianca.temPassaporte) {
 
 // arrays ou vetores
 
-const listaDeCompras = ['arroz', 'batata', 'maça'];
-console.log(listaDeCompras[0])
+const listaDeCompras = ['arroz', 'batata', 'maça', 'pera'];
+console.log(listaDeCompras[2]);
+
+//loops while
+
+let indice = 0
+while (indice < listaDeCompras.length) {
+  console.log(listaDeCompras[indice]);
+  indice += 1;
+}
+// loops for
+
+for (let indice = 0; indice < listaDeCompras.length; indice++) {console.log(listaDeCompras[indice])
+}
+
