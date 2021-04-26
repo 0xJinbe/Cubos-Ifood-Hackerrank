@@ -102,3 +102,23 @@ while (indice < listaDeCompras.length) {
 for (let indice = 0; indice < listaDeCompras.length; indice++) {console.log(listaDeCompras[indice])
 }
 
+// loop for simples *mais parecido .py
+
+let listaCompras2 = ['banana', 'macarrao', 'carne moida']
+for (let item of listaCompras2) {
+  console.log(item);
+}
+
+//encontrar item em uma lista
+
+let lista = ['arroz', 'feijao', 'banana', 'farinha'];
+
+for (let item of lista) {
+  console.log('Verificando item: ' + item);
+  if (item == 'banana') {
+    console.log('BANANA esta na lista');
+    break // para qndo acha item banana
+  }
+}
+
+

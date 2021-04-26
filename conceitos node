@@ -1,0 +1,3 @@
+let nome = 'claudio'
+
+console.log(nome)
