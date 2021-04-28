@@ -70,3 +70,119 @@ function imprimirValorDesconto (valorDaCompra, hora, cupom) {
 
 
 imprimirValorDesconto(100, 13, 'RANGOBARATO')
+
+// inversor de frases
+
+const texto = 'Eu gosto de estudar JS.'
+
+let palavra = ""
+const novaFrase = []
+for (let i = 0; i < texto.length; i ++) {
+  if (texto[i] === " ") {
+    console.log(palavra)
+    novaFrase.push(palavra);
+    palavra = "";
+    continue;
+  }
+  palavra += texto[i];
+}
+novaFrase.push(palavra);
+
+const fraseInvertida = [];
+for (let i = novaFrase.length -1; i >= 0; i--) {
+  fraseInvertida.push(novaFrase[i]);
+}
+console.log(fraseInvertida)
+
+// exercicio qual dia da semana
+
+function diaDaSemana(dias) {
+  const resto = dias % 7;
+
+  if (resto == 0) {
+    console.log('Domingo')
+  } else if (resto == 1) {
+    console.log('Segunda')
+  } else if (resto == 2) {
+    console.log('Terça')
+  } else if (resto == 3) {
+    console.log('Quarta')
+  } else if (resto == 4) {
+    console.log('Quinta')
+  } else if (resto == 5) {
+    console.log('Sexta')
+  } else if (resto == 6) {
+    console.log('Sabado')
+  } 
+}
+diaDaSemana(150)
+
+//codigo arrobash
+
+function arrobash(textoCodificado){
+  
+  const dicionario = {
+    "###": 'C',
+    "##@": 'U',
+    "#@#": 'B',
+    "@##": 'D',
+    "@#@": 'E',
+    "#@@": 'A',
+    "@@@": 'Y',
+    "@@#": 'M',
+  };
+  let resposta = "";
+  for(i = 0; i < textoCodificado.lenght; i+=3) {
+    const pedaco = textoCodificado[i] + textoCodificado[i+1] + textoCodificado[i+2];
+    resposta += dicionario[pedaço]
+  }
+  console.log(resposta)
+}  
+arrobash('#@@####@@@##@#@@@#@@@')
+
+// relatorio de pessoas por idade
+
+const pessoas = [
+  {
+    nome: 'José',
+    idade: 30
+  },
+  {
+    nome: 'Maria',
+    idade: 16
+  },
+  {
+    nome: 'Pedro',
+    idade: 18
+  },
+  {
+    nome: 'Andre',
+    idade: 12
+  }
+];
+
+
+function criarRelatorio(lista) {
+  let maiores = 0;
+  let menores = 0;
+
+  for(let item of lista) {
+    const idade = item.idade;
+    if (idade >= 18 ){
+      maiores ++;
+    } else {
+      menores ++;
+    }
+  }
+
+
+  const resposta = {
+  qtdMaiores: maiores,
+  qtdMenores: menores,
+  percMaiores: maiores / 4, // ou maiores/pessoas.lenght
+  percMenores: menores / 4
+  }
+  console.log(resposta)
+}
+
+criarRelatorio(pessoas);
