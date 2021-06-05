@@ -1,3 +1,3 @@
 # Cubos-Ifood-Hackerrank
 
-Simple JS resolutions made for ifood challenge.
+Simple JS course preparation for ifood hacker challenge.
